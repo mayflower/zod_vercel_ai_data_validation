@@ -38,6 +38,22 @@ importers:
 
   .: {}
 
+  example_1_zod_validation:
+    dependencies:
+      zod:
+        specifier: 'catalog:'
+        version: 3.23.8
+    devDependencies:
+      '@types/node':
+        specifier: 'catalog:'
+        version: 22.5.4
+      tsx:
+        specifier: 'catalog:'
+        version: 4.19.0
+      typescript:
+        specifier: 'catalog:'
+        version: 5.5.4
+
   example_2_zod_vercel:
     dependencies:
       '@ai-sdk/openai':
