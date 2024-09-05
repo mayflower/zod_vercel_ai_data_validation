@@ -8,11 +8,19 @@ import TurndownService from "turndown";
 dotenv.config()
 
 const schema = z.object({
-    title: z.string().min(1, "Title must be at least 1 character long"),
-    summary: z.string().min(1, "Summary must be at least 10 character long."),
-    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "Date must be in the format YYYY-MM-DD"),
-    authors: z.array(z.string().min(1, "Name of author must be at least 1 character long")),
-})
+    title: z.string({
+        description: "The headline of the article must be at least 1 character long"
+    }),
+    summary: z.string({
+        description: "The summary of the article must be at least 100 words long and must contain all aspects of the article. Do not make any assumptions! I want the summary in german language."
+    }),
+    date: z.string({
+        description: "The date of the article in Iso format (DD.MM.YYYY)",
+    }),
+    authors: z.array(z.string({
+        description: "The name of the author of the article"
+    })),
+});
 
 async function main() {
     try {
@@ -28,13 +36,13 @@ async function main() {
             schema: schema,
             messages: [{
                 role: 'system',
-                content: 'You are a professional newspaper reader who is tasked with summarizing an article.'
+                content: 'You are a professional newspaper reader who is tasked with summarizing an article. Do not make any assumptions!'
             }, {
                 role: 'user',
                 content: markdown
             }],
             seed: 1234,
-            temperature: 0
+            temperature: 0.1
         })
 
         console.log(object)
