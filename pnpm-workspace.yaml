@@ -1,6 +1,7 @@
 packages:
   - 'example_1_zod_validation'
   - 'example_2_zod_vercel'
+  - 'example_3_langfuse'
   - 'example_4_promptfoo'
 
 catalog:

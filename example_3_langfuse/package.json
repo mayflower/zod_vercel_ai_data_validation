@@ -1,0 +1,29 @@
+{
+  "name": "example_3_langfuse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx ./src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@ai-sdk/openai": "catalog:",
+    "@opentelemetry/auto-instrumentations-node": "^0.50.0",
+    "@opentelemetry/sdk-node": "^0.53.0",
+    "ai": "catalog:",
+    "dotenv": "catalog:",
+    "langfuse-vercel": "^3.20.0",
+    "turndown": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/turndown": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:"
+  }
+}
