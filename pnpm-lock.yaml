@@ -38,7 +38,7 @@ importers:
 
   .: {}
 
-  example_zod_vercel:
+  example_2_zod_vercel:
     dependencies:
       '@ai-sdk/openai':
         specifier: 'catalog:'
