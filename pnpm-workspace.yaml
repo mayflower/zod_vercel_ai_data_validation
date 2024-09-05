@@ -1,6 +1,7 @@
 packages:
   - 'example_1_zod_validation'
   - 'example_2_zod_vercel'
+  - 'example_4_promptfoo'
 
 catalog:
   "typescript": 5.5.4
@@ -16,3 +17,5 @@ catalog:
   "dotenv": ^16.4.5
   "@ai-sdk/openai": ^0.0.55
   "tsx": ^4.19.0
+  "vitest": ^2.0.5
+  "promptfoo": ^0.84.1

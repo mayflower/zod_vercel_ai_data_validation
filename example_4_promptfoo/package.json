@@ -1,0 +1,22 @@
+{
+  "name": "example_4_promptfoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "tsx ./src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "promptfoo": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
