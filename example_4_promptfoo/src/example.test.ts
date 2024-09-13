@@ -23,4 +23,13 @@ describe('Promptfoo Test Suite', () => {
 
         expect(response.pass).toBeFalsy();
     });
+
+    it('should fail when strings are not semantically similar with negative threshold', async () => {
+        const expected = 'The quick brown fox';
+        const output = 'The weather is nice today';
+        const threshold = -0.8;
+        const response = await promptfoo.assertions.matchesSimilarity(expected, output, threshold);
+
+        expect(response.pass).toBeTruthy();
+    });
 });
