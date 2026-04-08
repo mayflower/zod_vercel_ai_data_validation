@@ -1,5 +1,5 @@
 import {describe, it, expect, beforeAll} from 'vitest';
-import * as promptfoo from 'promptfoo';
+import promptfoo from 'promptfoo';
 import dotenv from 'dotenv'
 
 beforeAll(() => {
