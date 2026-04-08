@@ -18,5 +18,5 @@ catalog:
   "dotenv": ^16.4.5
   "@ai-sdk/openai": ^0.0.55
   "tsx": ^4.19.0
-  "vitest": ^2.0.5
+  "vitest": ^2.1.9
   "promptfoo": ^0.121.3
